@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fokus Kosova - Premium Upholstery Solutions</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-couch me-2"></i>Fokus Kosova
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Transform Your <span class="text-warning">Space</span>
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Premium upholstery solutions for modern living. We blend traditional craftsmanship 
+                        with modern innovation to create exceptional furniture.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-warning btn-lg" onclick="showServicesModal()">
+                            <i class="fas fa-eye me-2"></i>Our Services
+                        </button>
+                        <button class="btn btn-outline-light btn-lg" onclick="contactUs()">
+                            <i class="fas fa-phone me-2"></i>Contact Us
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Premium Upholstery" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Crafting Excellence" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="display-5 fw-bold text-dark mb-4">Crafting Excellence</h2>
+                        <h4 class="text-muted mb-4">Your Trusted Partner in Premium Upholstery</h4>
+                        <p class="lead mb-4">
+                            At Fokus Kosova, we blend traditional craftsmanship with modern innovation to create 
+                            exceptional upholstery solutions. Our extensive collection of premium fabrics, 
+                            state-of-the-art mechanisms, and custom furniture components sets new standards in the industry.
+                        </p>
+                        <p class="mb-4">
+                            With our strategic partnerships with leading Turkish manufacturers, we bring you the 
+                            finest materials and components that transform ordinary spaces into extraordinary living environments.
+                        </p>
+                        <button class="btn btn-dark btn-lg" onclick="showServicesModal()">
+                            <i class="fas fa-arrow-right me-2"></i>Explore Our Services
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="display-5 fw-bold text-dark">Why Choose Us</h2>
+                        <p class="lead">Discover what makes us the leading upholstery provider</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-star fa-3x text-warning mb-3"></i>
+                                <h5 class="card-title">Premium Quality</h5>
+                                <p class="card-text">We source only the finest materials from trusted manufacturers to ensure exceptional quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-shipping-fast fa-3x text-warning mb-3"></i>
+                                <h5 class="card-title">Fast Delivery</h5>
+                                <p class="card-text">Quick and reliable shipping across Kosovo and beyond with professional handling.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-headset fa-3x text-warning mb-3"></i>
+                                <h5 class="card-title">Expert Support</h5>
+                                <p class="card-text">Professional guidance and support for all your upholstery needs and requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="display-5 fw-bold text-dark">Our Premium Products</h2>
+                        <p class="lead">Explore our extensive collection of upholstery materials</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 class="card-img-top" alt="Premium Fabrics">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title">Premium Fabrics</h5>
+                                <p class="card-text">Luxurious materials for furniture and upholstery with various textures and colors.</p>
+                                <button class="btn btn-outline-dark" onclick="viewFabrics()">View Collection</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 class="card-img-top" alt="Mechanisms">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title">Mechanisms</h5>
+                                <p class="card-text">High-quality sofa and furniture mechanisms for smooth operation and durability.</p>
+                                <button class="btn btn-outline-dark" onclick="viewMechanisms()">View Collection</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 class="card-img-top" alt="Chair Components">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title">Chair Components</h5>
+                                <p class="card-text">Premium plywood and support systems for comfortable and durable seating.</p>
+                                <button class="btn btn-outline-dark" onclick="viewComponents()">View Collection</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 mb-5">
+                        <h2 class="display-5 fw-bold">Our Success</h2>
+                        <p class="lead">Numbers that speak for themselves</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="text-center">
+                            <div class="display-4 fw-bold text-warning" id="clientsCount">0</div>
+                            <p class="text-light">Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="text-center">
+                            <div class="display-4 fw-bold text-warning" id="productsCount">0</div>
+                            <p class="text-light">Products Delivered</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="text-center">
+                            <div class="display-4 fw-bold text-warning" id="yearsCount">0</div>
+                            <p class="text-light">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="text-center">
+                            <div class="display-4 fw-bold text-warning" id="satisfactionCount">0</div>
+                            <p class="text-light">% Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="display-5 fw-bold text-dark">Client Success Stories</h2>
+                        <p class="lead">What our clients say about us</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="text-warning mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="card-text">"Fokus Kosova transformed our furniture business with their premium materials and exceptional service. The quality of their products is unmatched!"</p>
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
+                                         class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="mb-0">Ahmet Yilmaz</h6>
+                                        <small class="text-muted">Furniture Manufacturer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="text-warning mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="card-text">"Their attention to detail and commitment to quality has made them our go-to supplier for all upholstery needs."</p>
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
+                                         class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="mb-0">Maria Petrova</h6>
+                                        <small class="text-muted">Interior Designer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="text-warning mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="card-text">"The range of fabrics and mechanisms they offer is impressive. Their products have significantly improved our furniture quality."</p>
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
+                                         class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="mb-0">David Smith</h6>
+                                        <small class="text-muted">Furniture Retailer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="display-5 fw-bold text-dark">Get in Touch</h2>
+                        <p class="lead">Ready to transform your space? Contact us today!</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            <div class="col-md-4 text-center">
+                                <i class="fas fa-map-marker-alt fa-3x text-warning mb-3"></i>
+                                <h5>Address</h5>
+                                <p class="text-muted">Kosovo, Ferizaj, 70000</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <i class="fas fa-phone fa-3x text-warning mb-3"></i>
+                                <h5>Phone</h5>
+                                <p class="text-muted">+383 49 117 333<br>+383 45 808 801</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <i class="fas fa-envelope fa-3x text-warning mb-3"></i>
+                                <h5>Email</h5>
+                                <p class="text-muted">fokus.ferizaj@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-couch me-2"></i>Fokus Kosova</h5>
+                    <p class="mb-0">Premium upholstery solutions for modern living.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2025 Fokus Kosova. All rights reserved.</p>
+                    <div class="mt-2">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html> 

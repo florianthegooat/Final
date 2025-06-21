@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Fokus Kosova</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-couch me-2"></i>Fokus Kosova
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Our <span class="text-warning">Services</span>
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Comprehensive upholstery solutions tailored to meet your specific needs
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Services Overview -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="display-5 fw-bold text-dark">What We Offer</h2>
+                        <p class="lead">Professional upholstery services and premium materials</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-3">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <h5 class="card-title">Material Supply</h5>
+                                <p class="card-text">Premium fabrics, mechanisms, and components for furniture manufacturers and craftsmen.</p>
+                                <button class="btn btn-outline-dark" onclick="showServiceDetails('materials')">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-3">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <h5 class="card-title">Fast Delivery</h5>
+                                <p class="card-text">Quick and reliable shipping across Kosovo with professional handling and tracking.</p>
+                                <button class="btn btn-outline-dark" onclick="showServiceDetails('delivery')">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-3">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h5 class="card-title">Expert Consultation</h5>
+                                <p class="card-text">Professional guidance and technical support for all your upholstery projects.</p>
+                                <button class="btn btn-outline-dark" onclick="showServiceDetails('consultation')">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Services -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="display-5 fw-bold text-dark">Service Details</h2>
+                        <p class="lead">Comprehensive solutions for every upholstery need</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-star fa-2x text-warning me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">Premium Quality Materials</h5>
+                                        <p class="text-muted mb-0">Finest fabrics and components</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Premium upholstery fabrics</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>High-quality sofa mechanisms</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Durable chair components</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Certified materials</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-shipping-fast fa-2x text-warning me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">Fast & Reliable Delivery</h5>
+                                        <p class="text-muted mb-0">Quick shipping across Kosovo</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Same-day processing</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Professional packaging</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Real-time tracking</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Secure delivery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-headset fa-2x text-warning me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">Expert Support</h5>
+                                        <p class="text-muted mb-0">Professional guidance</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Technical consultation</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Product recommendations</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Installation guidance</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>After-sales support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-cogs fa-2x text-warning me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">Custom Solutions</h5>
+                                        <p class="text-muted mb-0">Tailored to your needs</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom specifications</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Bulk orders</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Special requirements</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Project consultation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="display-5 fw-bold text-dark">How We Work</h2>
+                        <p class="lead">Simple and efficient process</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h5>1. Consultation</h5>
+                            <p class="text-muted">We discuss your requirements and provide expert recommendations.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h5>2. Quote</h5>
+                            <p class="text-muted">We provide a detailed quote with pricing and delivery timeline.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <h5>3. Delivery</h5>
+                            <p class="text-muted">Fast and secure delivery to your location with tracking.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h5>4. Support</h5>
+                            <p class="text-muted">Ongoing support and assistance for your projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-5 bg-dark text-white">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-4">Ready to Get Started?</h2>
+                <p class="lead mb-4">Contact us today to discuss your upholstery needs and get a free quote.</p>
+                <div class="d-flex gap-3 justify-content-center">
+                    <button class="btn btn-warning btn-lg" onclick="showContactModal()">
+                        <i class="fas fa-envelope me-2"></i>Get a Quote
+                    </button>
+                    <button class="btn btn-outline-light btn-lg" onclick="window.location.href='contact.html'">
+                        <i class="fas fa-phone me-2"></i>Contact Us
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-couch me-2"></i>Fokus Kosova</h5>
+                    <p class="mb-0">Premium upholstery solutions for modern living.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2025 Fokus Kosova. All rights reserved.</p>
+                    <div class="mt-2">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Additional JavaScript for Services page
+        function showServiceDetails(serviceType) {
+            const modal = document.createElement('div');
+            modal.className = 'modal fade';
+            modal.id = 'serviceDetailsModal';
+            
+            let title, content;
+            
+            switch(serviceType) {
+                case 'materials':
+                    title = 'Material Supply';
+                    content = `
+                        <h6>Premium Upholstery Materials</h6>
+                        <ul>
+                            <li>High-quality fabrics in various textures and colors</li>
+                            <li>Durable sofa and chair mechanisms</li>
+                            <li>Premium plywood and support systems</li>
+                            <li>Certified materials meeting international standards</li>
+                        </ul>
+                        <p><strong>Price Range:</strong> €10-150 depending on material type and quantity</p>
+                    `;
+                    break;
+                case 'delivery':
+                    title = 'Fast Delivery';
+                    content = `
+                        <h6>Reliable Shipping Services</h6>
+                        <ul>
+                            <li>Same-day order processing</li>
+                            <li>Professional packaging and handling</li>
+                            <li>Real-time tracking and updates</li>
+                            <li>Secure delivery across Kosovo</li>
+                        </ul>
+                        <p><strong>Delivery Time:</strong> 1-3 business days within Kosovo</p>
+                    `;
+                    break;
+                case 'consultation':
+                    title = 'Expert Consultation';
+                    content = `
+                        <h6>Professional Guidance</h6>
+                        <ul>
+                            <li>Technical consultation for projects</li>
+                            <li>Product recommendations based on needs</li>
+                            <li>Installation and maintenance guidance</li>
+                            <li>Ongoing support and assistance</li>
+                        </ul>
+                        <p><strong>Support:</strong> Available via phone, email, and in-person consultation</p>
+                    `;
+                    break;
+            }
+            
+            modal.innerHTML = `
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">
+                                <i class="fas fa-info-circle me-2"></i>${title}
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            ${content}
+                            <div class="text-center mt-4">
+                                <button class="btn btn-warning" onclick="showContactModal()">
+                                    <i class="fas fa-envelope me-2"></i>Get a Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            
+            const bootstrapModal = new bootstrap.Modal(modal);
+            bootstrapModal.show();
+        }
+    </script>
+</body>
+</html> 
